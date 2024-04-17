@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Window_Manager</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="source\types.fs" />
+    <Compile Include="source\buttons.fs" />
+    <Compile Include="source\windowCreation.fs" />
+    <Compile Include="source\mainDesktop.fs" />
+    <Compile Include="source\virtdesktop.fs" />
+    <Compile Include="source\window.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Raylib-cs" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="obj\" />
+    <Folder Include="source\windowserver\" />
+  </ItemGroup>
+
+</Project>
